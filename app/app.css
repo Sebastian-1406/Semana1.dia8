@@ -1,0 +1,140 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	border: 1px solid #000;
+}
+
+
+:root{
+	--rojo : hsl(0, 78%, 62%);
+	--celeste : hsl(180, 62%, 55%);
+	--naranja : hsl(34, 97%, 64%);
+	--azul : hsl(212, 86%, 64%);
+	--gris : hsl(234, 12%, 34%);
+	--gris-claro : hsl(229, 6%, 66%);
+	--blanco : hsl(0, 0%, 98%);
+}
+
+.contenedor{
+	padding: 50px 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+	background: var(--blanco);
+
+}
+.contenido__texto-titulo-1{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 100;
+	color: var(--gris);
+
+}
+.contenido__texto-titulo-2{
+	font-size: 25px;
+	color: var(--gris);
+	font-weight: 600;
+	margin-bottom: 10px;
+	text-align: center;
+
+
+}
+.contenido__texto-parrafo{
+	text-align: center;
+	color: var(--gris-claro);
+	font-weight: 400;
+}
+
+.contenedor__seccion{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}	
+
+.contenido__seccion{
+	padding: 20px;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 3px 7px 10px #0002;
+
+}
+
+
+.contenido__seccion-1{
+	border-top: 5px solid var(--celeste);
+}
+.contenido__seccion-2{
+	border-top: 5px solid var(--rojo);
+}
+.contenido__seccion-3{
+	border-top: 5px solid var(--naranja);
+}
+.contenido__seccion-4{
+	border-top: 5px solid var(--azul);
+}
+.contenido__seccion-titulo{
+	color: var(--gris);
+}
+
+.contenido__seccion-parrafo{
+	font-size: 15px;
+	font-weight: 200;
+	color: var(--gris-claro);
+}
+.contenido__seccion-imagen{	
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 360px){
+	.contenido__texto{
+		border: 1px solid black;
+	}
+
+	.contenido__texto-titulo-1{
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.contenido__texto-titulo-2{
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	.contenido__texto-parrafo{
+		font-size: 13px;
+	}
+
+
+}
+@media screen and (min-width: 700px){
+	.contenedor{
+		justify-content: center;
+		align-items: center;
+	}
+	.contenedor__seccion{
+		flex-direction: row;
+		align-items: center;
+	}
+	.contenido__texto{
+		width: 50%;
+	}
+	.contenido__seccion{
+		max-width: 360px;
+		height: 220px;
+	}
+	.contenedor__seccion-modificar{
+
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+}
