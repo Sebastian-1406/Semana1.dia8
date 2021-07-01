@@ -65,7 +65,11 @@ body{
 	box-shadow: 3px 7px 10px #0002;
 
 }
-
+.contenedor__seccion-modificar{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+}
 
 .contenido__seccion-1{
 	border-top: 5px solid var(--celeste);
@@ -130,11 +134,6 @@ body{
 		max-width: 360px;
 		height: 220px;
 	}
-	.contenedor__seccion-modificar{
 
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
 
 }
